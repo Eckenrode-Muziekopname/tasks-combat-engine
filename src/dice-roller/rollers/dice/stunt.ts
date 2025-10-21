@@ -1,4 +1,4 @@
-import type { LexicalToken } from "src/lexer/lexer";
+import type { LexicalToken } from "../lexer/lexer";
 import { DiceRoller } from "./dice";
 import { RenderTypes } from "./renderable";
 

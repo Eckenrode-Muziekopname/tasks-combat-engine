@@ -1,7 +1,7 @@
 import { Component, TFile, type App } from "obsidian";
 import { getAPI } from "obsidian-dataview";
 import type { DvAPIInterface } from "obsidian-dataview/lib/typings/api";
-import { Lexer } from "src/lexer/lexer";
+import { Lexer } from "../lexer/lexer";
 
 declare module "obsidian" {
     interface App {

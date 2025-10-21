@@ -8,11 +8,11 @@ import {
     type MarkdownPostProcessorContext
 } from "obsidian";
 import type { BasicRoller } from "../rollers/roller";
-import type DiceRollerPlugin from "src/main";
-import { StackRoller } from "src/rollers/dice/stack";
-import { isTemplateFolder } from "src/utils/util";
-import type { DiceRollerSettings } from "src/settings/settings.types";
-import { API } from "src/api/api";
+import type DiceRollerPlugin from "../main";
+import { StackRoller } from "../rollers/dice/stack";
+import { isTemplateFolder } from "../utils/util";
+import type { DiceRollerSettings } from "../settings/settings.types";
+import { API } from "../api/api";
 
 export default class DiceProcessor extends Component {
     app: App;

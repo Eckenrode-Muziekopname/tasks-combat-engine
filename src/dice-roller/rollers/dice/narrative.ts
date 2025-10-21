@@ -2,8 +2,8 @@ import { RenderableRoller } from "../roller";
 import { DiceRoller } from "./dice";
 import { RenderTypes } from "./renderable";
 import type { App } from "obsidian";
-import type { LexicalToken } from "src/lexer/lexer";
-import type { DiceRollerSettings } from "src/settings/settings.types";
+import type { LexicalToken } from "../lexer/lexer";
+import type { DiceRollerSettings } from "../settings/settings.types";
 
 interface NarrativeResult {
     success: number; //negative => failure

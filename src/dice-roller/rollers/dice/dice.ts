@@ -1,9 +1,9 @@
 import { Notice } from "obsidian";
-import type { LexicalToken } from "src/lexer/lexer";
+import type { LexicalToken } from "../lexer/lexer";
 
-import { _insertIntoMap } from "src/utils/util";
-import { DiceRenderer } from "src/renderer/renderer";
-import { DiceShape } from "src/renderer/shapes";
+import { _insertIntoMap } from "../utils/util";
+import { DiceRenderer } from "../renderer/renderer";
+import { DiceShape } from "../renderer/shapes";
 import { BasicStackRoller } from "./stack";
 import type { RenderableDice, RenderTypes } from "./renderable";
 

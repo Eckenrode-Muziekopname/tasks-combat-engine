@@ -11,12 +11,12 @@ import type { App } from "obsidian";
 
 import { DataviewManager } from "./api.dataview";
 import { None, Some, type Option } from "@sniptt/monads";
-import { StackRoller } from "src/rollers/dice/stack";
-import { TableRoller } from "src/rollers/table/table";
-import { SectionRoller } from "src/rollers/section/section";
-import { DataViewRoller, TagRoller } from "src/rollers/tag/tag";
-import { LineRoller } from "src/rollers/line/line";
-import { NarrativeStackRoller } from "src/rollers/dice/narrative";
+import { StackRoller } from "../rollers/dice/stack";
+import { TableRoller } from "../rollers/table/table";
+import { SectionRoller } from "../rollers/section/section";
+import { DataViewRoller, TagRoller } from "../rollers/tag/tag";
+import { LineRoller } from "../rollers/line/line";
+import { NarrativeStackRoller } from "../rollers/dice/narrative";
 
 export * from "../types/api";
 

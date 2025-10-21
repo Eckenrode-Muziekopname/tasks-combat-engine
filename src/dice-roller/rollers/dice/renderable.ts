@@ -1,4 +1,4 @@
-import type { DiceShape } from "src/renderer/shapes";
+import type { DiceShape } from "../renderer/shapes";
 
 export interface RenderableDice<T> {
     canRender(): boolean;

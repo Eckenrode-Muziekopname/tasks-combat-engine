@@ -5,9 +5,9 @@ import {
     setIcon,
     type CachedMetadata
 } from "obsidian";
-import { SECTION_REGEX } from "src/utils/constants";
+import { SECTION_REGEX } from "../utils/constants";
 import { GenericEmbeddedRoller } from "../roller";
-import { Icons } from "src/utils/icons";
+import { Icons } from "../utils/icons";
 
 export class LineRoller extends GenericEmbeddedRoller<string> {
     async getReplacer() {

@@ -1,7 +1,7 @@
 import { Component, Events, debounce } from "obsidian";
 
-import { StackRoller } from "src/rollers/dice/stack";
-import { DiceRoller } from "src/rollers/dice/dice";
+import { StackRoller } from "../rollers/dice/stack";
+import { DiceRoller } from "../rollers/dice/dice";
 import DiceGeometry, {
     D100DiceGeometry,
     D10DiceGeometry,
@@ -65,7 +65,7 @@ import {
     WebGLRenderer
 } from "three";
 import { ResourceTracker } from "./resource";
-import { RenderTypes, type RenderableDice } from "src/rollers/dice/renderable";
+import { RenderTypes, type RenderableDice } from "../rollers/dice/renderable";
 
 export type RendererData = {
     diceColor: string;

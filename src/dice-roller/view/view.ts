@@ -7,15 +7,15 @@ import {
     TextAreaComponent,
     WorkspaceLeaf
 } from "obsidian";
-import type DiceRollerPlugin from "src/main";
-import { StackRoller } from "src/rollers/dice/stack";
+import type DiceRollerPlugin from "../main";
+import { StackRoller } from "../rollers/dice/stack";
 import { ExpectedValue } from "../types/api";
 import { API } from "../api/api";
 import { type DiceIcon, IconManager } from "./view.icons";
-import { Icons } from "src/utils/icons";
+import { Icons } from "../utils/icons";
 import { nanoid } from "nanoid";
 import DiceTray from "./ui/DiceTray.svelte";
-import type { RenderableRoller } from "src/rollers/roller";
+import type { RenderableRoller } from "../rollers/roller";
 
 /* import { Details } from "@javalent/utilities"; */
 

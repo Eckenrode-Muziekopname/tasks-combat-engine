@@ -1,11 +1,11 @@
 import { App, Notice } from "obsidian";
-import type { LexicalToken } from "src/lexer/lexer";
-import { DiceRenderer } from "src/renderer/renderer";
+import type { LexicalToken } from "../lexer/lexer";
+import { DiceRenderer } from "../renderer/renderer";
 import {
     ButtonPosition,
     type DiceRollerSettings
-} from "src/settings/settings.types";
-import { ExpectedValue, Round } from "src/types/api";
+} from "../settings/settings.types";
+import { ExpectedValue, Round } from "../types/api";
 import { Roller, RenderableRoller } from "../roller";
 import { DiceRoller } from "./dice";
 import { PercentRoller } from "./percentage";

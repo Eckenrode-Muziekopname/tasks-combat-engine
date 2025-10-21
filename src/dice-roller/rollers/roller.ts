@@ -10,13 +10,13 @@ import {
     Component
 } from "obsidian";
 
-import type { LexicalToken } from "src/lexer/lexer";
-import { DiceRenderer } from "src/renderer/renderer";
+import type { LexicalToken } from "../lexer/lexer";
+import { DiceRenderer } from "../renderer/renderer";
 import type {
     ButtonPosition,
     DiceRollerSettings
-} from "src/settings/settings.types";
-import { Icons } from "src/utils/icons";
+} from "../settings/settings.types";
+import { Icons } from "../utils/icons";
 import type { RenderableDice } from "./dice/renderable";
 
 export interface ComponentLike {

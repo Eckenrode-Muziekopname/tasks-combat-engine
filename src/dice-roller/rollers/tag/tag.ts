@@ -1,10 +1,10 @@
 import { App, Component, MarkdownRenderer, Notice } from "obsidian";
-import type { LexicalToken } from "src/lexer/lexer";
-import { TAG_REGEX, DATAVIEW_REGEX } from "src/utils/constants";
+import type { LexicalToken } from "../lexer/lexer";
+import { TAG_REGEX, DATAVIEW_REGEX } from "../utils/constants";
 import { BasicRoller, type ComponentLike } from "../roller";
 import { SectionRoller } from "../section/section";
-import type { DiceRollerSettings } from "src/settings/settings.types";
-import { DataviewManager } from "src/api/api.dataview";
+import type { DiceRollerSettings } from "../settings/settings.types";
+import { DataviewManager } from "../api/api.dataview";
 
 abstract class DataViewEnabledRoller extends BasicRoller<SectionRoller> {
     base: string;

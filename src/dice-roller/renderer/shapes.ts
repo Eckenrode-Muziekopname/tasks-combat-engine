@@ -6,7 +6,7 @@ import {
     type Material,
     type Quaternion as ThreeQuaternion
 } from "three";
-import { RenderTypes } from "src/rollers/dice/renderable";
+import { RenderTypes } from "../rollers/dice/renderable";
 
 interface DiceVector {
     pos: { x: number; y: number; z: number };

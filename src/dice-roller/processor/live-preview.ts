@@ -47,7 +47,7 @@ import {
 import DiceRollerPlugin from "../main";
 import { BasicRoller } from "../rollers/roller";
 import { isTemplateFolder } from "../utils/util";
-import { API } from "src/api/api";
+import { API } from "../api/api";
 
 function selectionAndRangeOverlap(
     selection: EditorSelection,

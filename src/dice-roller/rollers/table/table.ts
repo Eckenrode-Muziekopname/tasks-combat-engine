@@ -8,12 +8,12 @@ import {
     type CachedMetadata
 } from "obsidian";
 
-import { TABLE_REGEX } from "src/utils/constants";
+import { TABLE_REGEX } from "../utils/constants";
 import { StackRoller } from "../dice/stack";
 import { GenericFileRoller } from "../roller";
-import { API } from "src/api/api";
-import type { DiceRollerSettings } from "src/settings/settings.types";
-import type { LexicalToken } from "src/lexer/lexer";
+import { API } from "../api/api";
+import type { DiceRollerSettings } from "../settings/settings.types";
+import type { LexicalToken } from "../lexer/lexer";
 
 class SubRollerResult {
     result: string = "";
