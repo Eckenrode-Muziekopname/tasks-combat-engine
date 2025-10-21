@@ -1,52 +1,91 @@
-> 🥇 Our documentation has moved ***[here](https://plugins.javalent.com/it)***.
+# T.A.S.K.S. Combat Engine
+
+**Unified TTRPG combat system for Obsidian.md** combining initiative tracking and integrated dice rolling with optional Discord integration.
+
+> **Fork Notice**: This plugin combines two excellent Obsidian plugins:
+> - [Initiative Tracker](https://github.com/javalent/initiative-tracker) by Jeremy Valentine
+> - [Dice Roller](https://github.com/javalent/dice-roller) by Jeremy Valentine
 >
-> <a href='https://www.buymeacoffee.com/valentine195' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
----
-
-The Initiative Tracker plugin for **[Obsidian](https://obsidian.md)** allows you to keep track of initiative and turn order during combat encounters in tabletop role-playing games.
-
-With this plugin, you can add creatures and NPCs to the initiative tracker, and track their health, armor class, and other stats. The plugin also calculates experience points for creatures, and supports both custom and SRD creatures from the **[Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks)** plugin.
+> Full credit to the original authors. This fork integrates both systems into a unified combat experience.
 
 ## Features
-- Add and remove creatures from the encounter
-- Input creature name, HP, AC and initiative
-- Calculate creature XP based on level or challenge rating
-- Group identical creatures together to simplify the encounter
-- Set creature display names to differentiate identical creatures
-- Supports dice rolls to add random amount creatures
-- Keep track of creature HP, AC and status
-- Sort creatures by initiative automatically
-- Add several encounters in one code block
-- Automatically save and load encounters
-- And much, much more...
 
-### Quickstart
+### Core Features (No external dependencies)
 
-- Install the Initiative Tracker plugin in Obsidian.
-- Open a note where you want to keep track of your encounter.
-- Create a code block with the language set to \`\`\`encounter.
+✅ **Initiative Tracking**
+- Track combat rounds and turn order
+- Manage HP, AC, temp HP, and status effects
+- Support for multiple parties and encounters
+- Automatic sorting by initiative
+- Combat logging to markdown files
 
-````yaml
-```encounter
-name: Example
-creatures:
- - 3: Goblin
+✅ **Integrated Dice Rolling**
+- Roll dice directly in combat view
+- Automatic attribution to active combatant
+- Full D&D dice notation support (XdY+Z, advantage, disadvantage, etc.)
+- Roll history for the current encounter
+- Visual dice rendering (3D dice animations)
+
+✅ **Combat Log**
+- Track all rolls and combat events
+- Export combat history to markdown
+- Review past encounters
+
+### Optional Integrations
+
+🔗 **Discord Webhooks** (Simple Setup)
+- Post combat updates to Discord channels
+- Share dice rolls with your party in real-time
+- Just paste your webhook URL - no server needed!
+- Supports multiple webhooks for multi-campaign setups
+
+🚀 **T.A.S.K.S. API Integration** (Advanced)
+- For users running the T.A.S.K.S. consciousness server
+- Multi-campaign character management
+- Advanced party detection and channel routing
+- Cross-platform combat sync
+
+## Installation
+
+### Manual Installation
+1. Download the latest release
+2. Extract to `<vault>/.obsidian/plugins/tasks-combat-engine/`
+3. Reload Obsidian
+4. Enable "T.A.S.K.S. Combat Engine" in Settings → Community Plugins
+
+### Building from Source
+```bash
+git clone https://github.com/Eckenrode-Muziekopname/tasks-combat-engine.git
+cd tasks-combat-engine
+npm install
+npm run build
 ```
-````
 
-- Add creatures to the encounter by name, dice roll or bestiary entry.
-- Launch the encounter by clicking on the play button, and start tracking initiative.
+## Quick Start
 
-Check out the **[plugin documentation](https://plugins.javalent.com/it)** for more detailed instructions and examples.
+### 1. Basic Combat Tracking
+1. Click the sword icon in the left ribbon
+2. Click "Start Combat"
+3. Add combatants using the "+" button
+4. Click "Next Turn" to advance through combat
 
-## Support
+### 2. Rolling Dice in Combat
+- Click the dice icon in combat view
+- Enter your roll (e.g., `1d20+5`)
+- Roll is attributed to active combatant
+- Results appear in combat log
 
-If you encounter any issues, want to give back and help out, or have suggestions for new features, file an issue on the **[GitHub repository](https://github.com/valentine195/obsidian-initiative-tracker/issues)**.
+### 3. Discord Integration (Optional)
+1. Settings → T.A.S.K.S. Combat Engine
+2. Enable "Discord Integration"
+3. Paste your Discord webhook URL
+4. Done!
 
-### TTRPG plugins
+## License
 
-If you're using Obsidian to run/plan a TTRPG, you may find my other plugins useful:
+GPL-3.0 (inherited from upstream projects)
 
-- **[Obsidian Leaflet](https://github.com/valentine195/obsidian-leaflet-plugin)** Adds interactive maps to Obsidian notes
-- **[Dice Roller](https://github.com/valentine195/obsidian-dice-roller)** Inline dice rolling for Obsidian
-- **[Fantasy Statblocks](https://github.com/valentine195/obsidian-5e-statblocks)** Format Statblocks inside Obsidian
+## Credits
+
+- **Initiative Tracker & Dice Roller**: [Jeremy Valentine](https://github.com/valentine195)
+- **Integration**: Eckenrode Muziekopname
